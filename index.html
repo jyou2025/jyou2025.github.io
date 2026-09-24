@@ -142,6 +142,54 @@
 
     .publication-title {
       font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    .publication-meta {
+      color: #555;
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+
+    .publication-methods {
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 6px;
+    }
+
+    .publication a {
+      color: #0066cc;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .publication a:hover {
+      text-decoration: underline;
+    }
+
+    /* Tools */
+    .tool-card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 15px;
+      border-left: 4px solid #28a745;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .tool-card h3 {
+      margin-top: 0;
+      color: #222;
+    }
+
+    /* Tags */
+    .tag {
+      display: inline-block;
+      background: #e8f0fe;
+      color: #0066cc;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 13px;
+      margin: 3px 2px;
     }
 
     /* Footer */
@@ -185,9 +233,9 @@
 
     <div>
       <a href="#about">About</a>
-      <a href="#research">Research</a>
       <a href="#projects">Projects</a>
       <a href="#publications">Publications</a>
+      <a href="#tools">Tools</a>
       <a href="#contact">Contact</a>
     </div>
 
@@ -198,30 +246,15 @@
 <!-- Hero -->
 <div class="hero">
 
-  <h1>Jihao You</h1>
+  <h1>Jihao You（游济豪）</h1>
 
   <h2>
-    Postdoctoral Fellow | Data Scientist & Modeller in Animal Science
+    Postdoctoral Fellow · University of Guelph
   </h2>
 
   <p>
-    Machine Learning · Mechanistic Modelling · Precision Livestock Farming · Applied AI
+    Machine Learning · ODE-based Mechanistic Modelling · Statistical Modelling · Applied AI Agents
   </p>
-
-  <div class="buttons">
-
-    <a class="button"
-       href="https://github.com/jyou2025"
-       target="_blank">
-       GitHub
-    </a>
-
-    <a class="button secondary"
-       href="#publications">
-       Publications
-    </a>
-
-  </div>
 
 </div>
 
@@ -235,67 +268,34 @@
   <h2 class="section-title">About Me</h2>
 
   <p>
-    I am a postdoctoral fellow working at the intersection of animal science,
-    data science, mathematical modelling, and artificial intelligence.
+    My work sits at the intersection of mechanistic modelling, machine learning, 
+    statistical modelling, and LLM-based agentic frameworks. I work with large, 
+    heterogeneous biological and production datasets and develop quantitative 
+    approaches to address complex challenges in animal production and feed manufacturing. 
+    My research includes predictive machine learning pipelines, dynamic ODE-based mechanistic models, interpretable statistical frameworks, and 
+    applied AI agents, with the goal of turning biological data into actionable insights that 
+    improve production efficiency, sustainability, and decision-making.
   </p>
 
   <p>
-    My research focuses on applying machine learning, mechanistic models,
-    and data-driven approaches to understand and improve animal production systems.
+    <span class="tag">Data Integration</span>
+    <span class="tag">Feature Engineering</span>
+    <span class="tag">Data Imputation</span>
+    <span class="tag">Anomaly Detection</span>
+    <span class="tag">Machine Learning</span>
+    <span class="tag">ODE-based Mechanistic Modelling</span>
+    <span class="tag">Mixed-Effects Models</span>
+    <span class="tag">Meta-Analysis</span>
+    <span class="tag">Parameter Estimation</span>
+    <span class="tag">Applied Agentic AI</span>
+    <span class="tag">Python</span>
+    <span class="tag">SAS</span>
+    <span class="tag">Julia</span>
+    <span class="tag">R</span>
   </p>
 
 </section>
 
-
-<!-- Research -->
-<section id="research">
-
-  <h2 class="section-title">Research Interests</h2>
-
-  <div class="cards">
-
-    <div class="card">
-      <h3>Precision Livestock Farming</h3>
-
-      <p>
-        Using sensor data, automated monitoring systems, and computational
-        models to understand animal behaviour and production.
-      </p>
-    </div>
-
-
-    <div class="card">
-      <h3>Machine Learning</h3>
-
-      <p>
-        Developing predictive models for animal production,
-        feed manufacturing, and biological systems.
-      </p>
-    </div>
-
-
-    <div class="card">
-      <h3>Mechanistic Modelling</h3>
-
-      <p>
-        Developing dynamic biological models using differential equations
-        to describe growth, metabolism, and nutrient utilization.
-      </p>
-    </div>
-
-
-    <div class="card">
-      <h3>Applied AI</h3>
-
-      <p>
-        Exploring AI agents and large language models for scientific
-        research, data analysis, and decision support in animal science.
-      </p>
-    </div>
-
-  </div>
-
-</section>
 
 
 <!-- Projects -->
@@ -303,44 +303,65 @@
 
   <h2 class="section-title">Selected Projects</h2>
 
-
   <div class="card">
-
-    <h3>Feed Mill PDI Prediction</h3>
-
+    <h3>Dynamic Mechanistic Model of Turkey  Growth and Metabolism</h3>
     <p>
-      Machine-learning approaches for predicting pellet durability
-      across commercial feed production lines.
+    Developing a compartmental ODE-based mechanistic model to 
+    simulate growth and metabolic processes, 
+    including protein and fat turnover, 
+    in modern commercial turkey genetic lines.
+    Collaboration with Hendrix Genetics. Manuscript in preparation.
     </p>
-
     <p>
       <strong>Methods:</strong>
-      Python · Random Forest · Gradient Boosting · Support Vector Regression
+      <span class="tag">ODE-based Mechanistic Modelling</span>
+      <span class="tag">Parameter Estimation</span>
+      <span class="tag">Sensitivity Analysis</span>
+      <span class="tag">Julia</span>
     </p>
-
   </div>
 
   <br>
 
-
   <div class="card">
-
-    <h3>Turkey Mechanistic Model</h3>
-
+    <h3>Pelleted Feed Quality Prediction (Project 1.0 & Project 2.0)</h3>
     <p>
-      Development of a dynamic physiological model for turkey growth,
-      nutrient utilization, and metabolism.
+      Developed machine learning and statistical models to predict Pellet Durability 
+      Index (PDI).  Integrated nutrition, manufacturing, and environmental 
+      variables to built a robust, prediction system and optimisation 
+      algorithm to support real-time decision-making at the mill level.
+      Collaborated with Trouw Nutrition Canada, Molesworth Feed Supply,
+      MasterFeeds, and Jones Feed Mills.
     </p>
-
     <p>
       <strong>Methods:</strong>
-      ODE modelling · Python · JAX · Bayesian inference
+      <span class="tag">Data Integration</span>
+      <span class="tag">Machine Learning</span>
+      <span class="tag">Mixed-Effects Model</span>
+      <span class="tag">Regression</span>
+      <span class="tag">Feature Engineering</span>
+      <span class="tag">Python</span>
+      <span class="tag">SAS</span>
     </p>
-
   </div>
 
   <br>
 
+  <div class="card">
+    <h3>Machine Learning for Precision-Fed Broiler Breeders</h3>
+    <p>
+      Applied machine learning to large-scale data collected from broiler 
+      breeders fed by a precision feeding system, with applications including 
+      the prediction of egg-laying events and the detection and cleaning 
+      of anomalous body-weight records.
+    </p>
+    <p>
+      <strong>Methods:</strong>
+      <span class="tag">Machine Learning</span>
+      <span class="tag">Classification</span>
+      <span class="tag">Python</span>
+    </p>
+  </div>
 
 </section>
 
@@ -348,29 +369,209 @@
 <!-- Publications -->
 <section id="publications">
 
-  <h2 class="section-title">Selected Publications</h2>
-
+  <h2 class="section-title">First-Author Publications</h2>
 
   <div class="publication">
-
     <div class="publication-title">
-      
+      1. Impact Range Assessment (IRA): An Interpretable Sensitivity Measure for Regression Modelling
     </div>
+    <div class="publication-meta">
+      <strong>You, J.</strong>, Tulpan, D., Diao, J., &amp; Ellis, J. L. (2026).
+      <em>arXiv preprint</em> arXiv:2602.05239.
+    </div>
+    <div class="publication-methods">
+      Methods: Explainable AI · Machine Learning · Sensitivity Analysis · Model Interpretability ·  Regression · Python
+    </div>
+    <a href="https://doi.org/10.48550/arXiv.2602.05239" target="_blank">→ View Preprint</a>
+  </div>
 
+  <div class="publication">
+    <div class="publication-title">
+      2. Learning to Predict Pellet Quality: A Machine Learning and Feature Engineering Approach
+    </div>
+    <div class="publication-meta">
+      <strong>You, J.</strong>, Tulpan, D., Krziyzek, C., &amp; Ellis, J. L. (2026).
+      <em>Journal of Animal Science</em>, skag079.
+    </div>
+    <div class="publication-methods">
+      Methods: Machine Learning · Regression · Feature Engineering · SHAP ·  Python
+    </div>
+    <a href="https://doi.org/10.1093/jas/skag079" target="_blank">→ View Paper</a>
+  </div>
+
+  <div class="publication">
+    <div class="publication-title">
+      3. Evaluating Variables Affecting Pellet Durability Index (PDI) in Pelleted Corn-Soy-Based Feeds for Swine and Poultry: A Meta-Analysis
+    </div>
+    <div class="publication-meta">
+      <strong>You, J.</strong>, Hall, K., Civiero, J., Malpass, M. C., Tulpan, D., &amp; Ellis, J. L. (2025).
+      <em>Animal Feed Science and Technology</em>, 116566.
+    </div>
+    <div class="publication-methods">
+      Methods: Random-effects meta-analysis · Automated model selection pipeline · Mixed-effects models · SAS (PROC MIXED)
+    </div>
+    <a href="https://doi.org/10.1016/j.anifeedsci.2025.116566" target="_blank">→ View Paper</a>
+  </div>
+
+  <div class="publication">
+    <div class="publication-title">
+      4. Prediction of Pellet Durability Index (PDI) in a Commercial Feed Mill Using Multiple Linear Regression with Variable Selection and Dimensionality Reduction
+    </div>
+    <div class="publication-meta">
+      <strong>You, J.</strong>, Tulpan, D., Krziyzek, C., &amp; Ellis, J. L. (2025).
+      <em>Journal of Animal Science</em>, skaf021.
+    </div>
+    <div class="publication-methods">
+      Methods: Multiple Linear Regression · Variable Selection · PCA · PLSR · SAS
+    </div>
+    <a href="https://doi.org/10.1093/jas/skaf021" target="_blank">→ View Paper</a>
+  </div>
+
+  <div class="publication">
+    <div class="publication-title">
+      5. Review: Recent Advances and Future Technologies in Poultry Feed Manufacturing
+    </div>
+    <div class="publication-meta">
+      <strong>You, J.</strong>, Ellis, J. L., Tulpan, D., &amp; Malpass, M. C. (2024).
+      <em>World's Poultry Science Journal</em>, 1–13.
+    </div>
+    <div class="publication-methods">
+      Methods: Systematic review
+    </div>
+    <a href="https://doi.org/10.1080/00439339.2024.2323536" target="_blank">→ View Paper</a>
+  </div>
+
+  <div class="publication">
+    <div class="publication-title">
+      6. Comparison of Imputation Methods for Missing Production Data of Dairy Cattle
+    </div>
+    <div class="publication-meta">
+      <strong>You, J.</strong>, Ellis, J. L., Adams, S., Sahar, M., Jacobs, M., &amp; Tulpan, D. (2023).
+      <em>Animal</em>, 17, 100921.
+    </div>
+    <div class="publication-methods">
+      Methods: Data imputation ·  Machine learning · MissForest · Python
+    </div>
+    <a href="https://doi.org/10.1016/j.animal.2023.100921" target="_blank">→ View Paper</a>
+  </div>
+
+  <div class="publication">
+    <div class="publication-title">
+      7. Using Machine Learning Regression Models to Predict the Pellet Quality of Pelleted Feeds
+    </div>
+    <div class="publication-meta">
+      <strong>You, J.</strong>, Tulpan, D., Malpass, M. C., &amp; Ellis, J. L. (2022).
+      <em>Animal Feed Science and Technology</em>, 293, 115443.
+    </div>
+    <div class="publication-methods">
+      Methods: Machine learning · Regression · Feature importance · SVR · Python
+    </div>
+    <a href="https://doi.org/10.1016/j.anifeedsci.2022.115443" target="_blank">→ View Paper</a>
+  </div>
+
+  <div class="publication">
+    <div class="publication-title">
+      8. Using an Artificial Neural Network to Predict the Probability of Oviposition Events of Precision-Fed Broiler Breeder Hens
+    </div>
+    <div class="publication-meta">
+      <strong>You, J.</strong>, Lou, E., Afrouziyeh, M., Zukiwsky, N. M., &amp; Zuidhof, M. J. (2021).
+      <em>Poultry Science</em>, 100(8), 101187.
+    </div>
+    <div class="publication-methods">
+      Methods: Artificial Neural Network · Binary classification · Probability · Keras (TensorFlow) · Python
+    </div>
+    <a href="https://doi.org/10.1016/j.psj.2021.101187" target="_blank">→ View Paper</a>
+  </div>
+
+  <div class="publication">
+    <div class="publication-title">
+      9. A Supervised Machine Learning Method to Detect Anomalous Real-Time Broiler Breeder Body Weight Data Recorded by a Precision Feeding System
+    </div>
+    <div class="publication-meta">
+      <strong>You, J.</strong>, Lou, E., Afrouziyeh, M., Zukiwsky, N. M., &amp; Zuidhof, M. J. (2021).
+      <em>Computers and Electronics in Agriculture</em>, 185, 106171.
+    </div>
+    <div class="publication-methods">
+      Methods: Anomaly detection · Supervised learning ·  Python
+    </div>
+    <a href="https://doi.org/10.1016/j.compag.2021.106171" target="_blank">→ View Paper</a>
+  </div>
+
+  <div class="publication">
+    <div class="publication-title">
+      10. Application of Random Forest Classification to Predict Daily Oviposition Events in Broiler Breeders Fed by Precision Feeding System
+    </div>
+    <div class="publication-meta">
+      <strong>You, J.</strong>, van der Klein, S. A., Lou, E., &amp; Zuidhof, M. J. (2020).
+      <em>Computers and Electronics in Agriculture</em>, 175, 105526.
+    </div>
+    <div class="publication-methods">
+      Methods: Random Forest · Binary classification · Python
+    </div>
+    <a href="https://doi.org/10.1016/j.compag.2020.105526" target="_blank">→ View Paper</a>
+  </div>
+
+</section>
+
+
+<!-- Tools -->
+<section id="tools">
+
+  <h2 class="section-title">Research Software & Tools</h2>
+
+  <div class="tool-card">
+    <h3>1. Impact Range Assessment (IRA)</h3>
     <p>
+      A Python library for implementing single-execution Impact Range Assessment (IRA) and repeated IRA analyses
     </p>
-
+    <p>
+      <span class="tag">Explainable AI</span>
+      <span class="tag">Machine Learning</span>
+      <span class="tag">Sensitivity Analysis</span>
+      <span class="tag">Model Interpretability</span>
+      <span class="tag">Regression</span>
+      <span class="tag">Python</span>
+    </p>
+    <p>
+      <a href="https://github.com/jyou2025/impact-range-assessment" target="_blank">→ GitHub Repository</a>
+    </p>
   </div>
 
-
-  <div class="publication">
-
-    <div class="publication-title">
-      Additional publications will be added here.
-    </div>
-
+  <div class="tool-card">
+    <h3>2. PDI Prediction Web Tools</h3>
+    <p>
+      Interactive web application interfaces for predicting Pellet Durability Index (PDI)
+      in commercial feed mills, built on the machine learning and statistical models
+    </p>
+    <p>
+      <span class="tag">Model Deployment</span>
+      <span class="tag">Feed Manufacturing</span>
+      <span class="tag">Pellet Quality</span>
+      <span class="tag">Web App</span>
+      <span class="tag">Python</span>
+    </p>
+    <p>
+      <a href="http://137.184.153.27:1000/" target="_blank">→ Open Tool</a>
+    </p>
   </div>
 
+  
+  <div class="tool-card">
+    <h3>3. PDI Agent</h3>
+    <p>
+      A Large Language Model (LLM)-based framework for automated maintenance of predictive models 
+      in commercial feed mills, integrating a rule-based pipeline with an LLM agent
+    </p>
+    <p>
+      <span class="tag">Large Language Model (LLM)</span>
+      <span class="tag">Applied AI Agent</span>
+      <span class="tag">Model Updating</span>
+      <span class="tag">Model Deployment</span>
+      <span class="tag">Feed Manufacturing</span>
+      <span class="tag">Pellet Quality</span>
+      <span class="tag">Python</span>
+    </p>
+  </div>
 
 </section>
 
@@ -381,24 +582,25 @@
   <h2 class="section-title">Contact</h2>
 
   <p>
-    GitHub:
-    <a href="https://github.com/jyou2025"
-       target="_blank">
-       github.com/jyou2025
+    🏫 University Profile:
+    <a href="https://animalbiosciences.uoguelph.ca/abscpeople/jyou03" target="_blank">
+      University of Guelph — Department of Animal Biosciences — Jihao You
     </a>
   </p>
 
   <p>
-    LinkedIn:
-    <a href="#">
-      Add your LinkedIn profile here
+    🔗 LinkedIn:
+    <a href="https://www.linkedin.com/in/jihao-y-1128b7193/" target="_blank">
+      linkedin.com/in/jihao-y-1128b7193
     </a>
   </p>
 
+  
   <p>
-    Email:
-    your.email@example.com
+    📧 Email:
+    <a href="mailto:jyou03@uoguelph.ca">jyou03@uoguelph.ca</a>
   </p>
+
 
 </section>
 
@@ -407,9 +609,9 @@
 
 
 <footer>
-
-  © 2026 Jihao You · Built with GitHub Pages
-
+  © 2026 Jihao You &nbsp;·&nbsp;
+  University of Guelph, Department of Animal Biosciences &nbsp;·&nbsp;
+  <a href="https://github.com/jyou2025" target="_blank">GitHub</a>
 </footer>
 
 
