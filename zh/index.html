@@ -1,1 +1,707 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   游济豪（Jihao You）| 学术与科研主页
+  </title>
+  <meta content="游济豪（Jihao You）的学术与科研主页，主要研究方向包括大数据分析、机器学习、动态机理建模、统计建模及智能体应用。" name="description"/>
+  <link href="https://jyou2025.github.io/" hreflang="en" rel="alternate"/>
+  <link href="https://jyou2025.github.io/zh/" hreflang="zh-CN" rel="alternate"/>
+  <link rel="canonical"
+      href="https://jyou2025.github.io/zh/"/>
+  <style>
+    * {
+      box-sizing:border-box;
+    }
+    html {
+      scroll-behavior:smooth;
+      scroll-padding-top:90px;
+    }
+    body {
+      margin:0;
+      font-family:Arial,"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;
+      line-height:1.75;
+      color:#222;
+      background:#f7f8fa;
+    }
+    nav {
+      background:#fff;
+      border-bottom:1px solid #ddd;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+    .nav-container {
+      max-width:1100px;
+      margin:auto;
+      padding:15px 25px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:15px;
+    }
+    .nav-name {
+      font-size:20px;
+      font-weight:bold;
+      white-space:nowrap;
+    }
+    .nav-links {
+      display:flex;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:6px 18px;
+    }
+    .nav-links a {
+      color:#333;
+      text-decoration:none;
+    }
+    .nav-links a:hover {
+      color:#06c;
+    }
+    .lang-switch {
+      padding:5px 10px;
+      border:1px solid #d7e4f4;
+      border-radius:6px;
+      color:#06c!important;
+      white-space:nowrap;
+    }
+    .lang-current {
+      font-weight:bold;
+      color:#06c;
+    }
+    .container {
+      max-width:1000px;
+      margin:auto;
+      padding:60px 25px;
+    }
+    .hero {
+      padding:90px 25px;
+      background:white;
+      text-align:center;
+      border-bottom:1px solid #eee;
+    }
+    .hero h1 {
+      font-size:48px;
+      margin:0 0 10px;
+    }
+    .hero h2 {
+      font-size:22px;
+      font-weight:normal;
+      color:#555;
+      margin:0 0 10px;
+    }
+    .hero p {
+      color:#666;
+      font-size:18px;
+    }
+    .button {
+      display:inline-block;
+      padding:10px 20px;
+      margin:5px;
+      background:#06c;
+      color:white;
+      text-decoration:none;
+      border-radius:6px;
+    }
+    .button.secondary {
+      background:#555;
+    }
+    section {
+      margin-bottom:70px;
+    }
+    h2.section-title {
+      font-size:30px;
+      border-bottom:2px solid #06c;
+      padding-bottom:8px;
+      margin-bottom:25px;
+    }
+    .cards {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+    .card {
+      background:white;
+      padding:25px;
+      border-radius:8px;
+      border:1px solid #e5e5e5;
+      margin-bottom:20px;
+    }
+    .card h3 {
+      margin-top:0;
+    }
+    .publication {
+      background:white;
+      padding:20px;
+      margin-bottom:15px;
+      border-left:4px solid #06c;
+    }
+    .publication-title {
+      font-weight:bold;
+      margin-bottom:6px;
+    }
+    .publication-meta {
+      color:#555;
+      font-size:15px;
+      margin-bottom:6px;
+    }
+    .publication-methods {
+      font-size:14px;
+      color:#777;
+      margin-bottom:6px;
+    }
+    .publication a {
+      color:#06c;
+      font-size:14px;
+      text-decoration:none;
+    }
+    .publication a:hover {
+      text-decoration:underline;
+    }
+    .tool-card {
+      background:white;
+      padding:20px;
+      margin-bottom:15px;
+      border-left:4px solid #28a745;
+      border-radius:0 8px 8px 0;
+    }
+    .tool-card h3 {
+      margin-top:0;
+    }
+    .tag {
+      display:inline-block;
+      background:#e8f0fe;
+      color:#06c;
+      padding:3px 10px;
+      border-radius:20px;
+      font-size:13px;
+      margin:3px 2px;
+    }
+    footer {
+      text-align:center;
+      padding:30px;
+      background:#222;
+      color:#ccc;
+    }
+    footer a {
+      color:white;
+    }
+    #contact a {
+      overflow-wrap:anywhere;
+    }
+    @media(max-width:700px) {
+      .hero {
+        padding:65px 20px;
+      }
+      .hero h1 {
+        font-size:36px;
+      }
+      .hero h2 {
+        font-size:19px;
+      }
+      .nav-container {
+        flex-direction:column;
+      }
+      .nav-links {
+        justify-content:center;
+        gap:8px 13px;
+      }
+      .container {
+        padding:40px 20px;
+      }
+      h2.section-title {
+        font-size:26px;
+      }
+    }
+  </style>
+ </head>
+ <body>
+  <nav>
+   <div class="nav-container">
+    <div class="nav-name">
+     游济豪 · Jihao You
+    </div>
+    <div class="nav-links">
+     <a href="#about">
+      个人简介
+     </a>
+     <a href="#projects">
+      科研项目
+     </a>
+     <a href="#publications">
+      学术论文
+     </a>
+     <a href="#tools">
+      科研工具
+     </a>
+     <a href="#contact">
+      联系方式
+     </a>
+     <a aria-label="Switch to English" class="lang-switch" href="/" lang="en">
+      EN
+     </a>
+     <span aria-current="page" class="lang-current">
+      中文
+     </span>
+    </div>
+   </div>
+  </nav>
+  <div class="hero">
+   <h1>
+    游济豪（Jihao You）
+   </h1>
+   <h2>
+    博士后研究员 · 加拿大圭尔夫大学（University of Guelph）
+   </h2>
+   <p>
+    大数据分析 · 机器学习 · 动态机理建模 · 统计建模 · 智能体应用
+   </p>
+  </div>
+  <main class="container">
+   <section id="about">
+    <h2 class="section-title">
+     个人简介
+    </h2>
+    <p>
+     本人的研究方向主要包括大数据分析、机器学习、动态机理建模、统计建模及智能体应用，重点关注这些方法在动物生产和饲料加工领域的应用。研究工作涉及生物学与生产数据的整合分析、预测模型开发、动物生长与代谢过程的动态模拟，以及数据驱动的生产决策支持。通过结合数据分析、数学建模与人工智能技术，为提高动物生产效率、优化饲料加工过程及促进生产系统的可持续发展提供科学依据和技术支持。
+    </p>
+    <p>
+     <span class="tag">
+      数据整合
+     </span>
+     <span class="tag">
+      特征工程
+     </span>
+     <span class="tag">
+      缺失数据插补
+     </span>
+     <span class="tag">
+      异常检测
+     </span>
+     <span class="tag">
+      机器学习
+     </span>
+     <span class="tag">
+      动态机理模型
+     </span>
+     <span class="tag">
+      混合效应模型
+     </span>
+     <span class="tag">
+      荟萃分析
+     </span>
+     <span class="tag">
+      参数估计
+     </span>
+     <span class="tag">
+      智能体应用
+     </span>
+     <span class="tag">
+      Python
+     </span>
+     <span class="tag">
+      SAS
+     </span>
+     <span class="tag">
+      Julia
+     </span>
+     <span class="tag">
+      R
+     </span>
+    </p>
+   </section>
+   <section id="projects">
+    <h2 class="section-title">
+     代表性科研项目
+    </h2>
+    <div class="card">
+     <h3>
+      火鸡生长与代谢的动态机理模型
+     </h3>
+     <p>
+      本项目与 Hendrix Genetics 合作，旨在构建基于常微分方程的动态机理模型，模拟现代商业火鸡的生长发育及体内蛋白质和脂肪的动态代谢过程。目前，相关研究论文正在撰写中。
+     </p>
+     <p>
+      <strong>
+       研究方法：
+      </strong>
+      <span class="tag">
+       动态机理模型
+      </span>
+      <span class="tag">
+       参数估计
+      </span>
+      <span class="tag">
+       敏感性分析
+      </span>
+      <span class="tag">
+       Julia
+      </span>
+     </p>
+    </div>
+    <div class="card">
+     <h3>
+      颗粒饲料质量预测与优化（项目 1.0 与 2.0）
+     </h3>
+     <p>
+      本项目与 Trouw Nutrition Canada（泰高动物营养加拿大）、Molesworth Feed Supply、MasterFeeds 和 Jones Feed Mills 等企业合作，利用机器学习和统计建模方法，研究饲料配方、加工工艺及环境因素对颗粒饲料耐久性指数（Pellet Durability Index，PDI）的影响，并开发 PDI 预测模型，为饲料厂的生产过程优化和质量管理提供技术支持。
+     </p>
+     <p>
+      <strong>
+       研究方法：
+      </strong>
+      <span class="tag">
+       数据整合
+      </span>
+      <span class="tag">
+       机器学习
+      </span>
+      <span class="tag">
+       混合效应模型
+      </span>
+      <span class="tag">
+       回归分析
+      </span>
+      <span class="tag">
+       特征工程
+      </span>
+      <span class="tag">
+       Python
+      </span>
+      <span class="tag">
+       SAS
+      </span>
+     </p>
+    </div>
+    <div class="card">
+     <h3>
+      基于精准饲喂系统的肉种鸡生产数据机器学习研究
+     </h3>
+     <p>
+      本项目基于精准饲喂系统采集的大规模肉种鸡生产数据，利用机器学习方法构建产蛋事件预测模型，并开发异常体重数据的自动识别与清理方法，以提高生产数据的质量和利用效率，为肉种鸡的精准饲养管理提供技术支持。
+     </p>
+     <p>
+      <strong>
+       研究方法：
+      </strong>
+      <span class="tag">
+       机器学习
+      </span>
+      <span class="tag">
+       分类模型
+      </span>
+      <span class="tag">
+       Python
+      </span>
+     </p>
+    </div>
+   </section>
+   <section id="publications">
+    <h2 class="section-title">
+     第一作者学术论文
+    </h2>
+    <article class="publication">
+     <div class="publication-title">
+      1. Impact Range Assessment (IRA): An Interpretable Sensitivity Measure for Regression Modelling
+     </div>
+     <div class="publication-meta">
+      You, J., Tulpan, D., Diao, J., &amp; Ellis, J. L. (2026).
+      <em>
+       arXiv preprint, arXiv:2602.05239
+      </em>
+     </div>
+     <div class="publication-methods">
+      研究方法：可解释人工智能 · 机器学习 · 敏感性分析 · 模型可解释性 · 回归 · Python
+     </div>
+     <a href="https://doi.org/10.48550/arXiv.2602.05239" rel="noopener noreferrer" target="_blank">
+      → 查看预印本
+     </a>
+    </article>
+    <article class="publication">
+     <div class="publication-title">
+      2. Learning to Predict Pellet Quality: A Machine Learning and Feature Engineering Approach
+     </div>
+     <div class="publication-meta">
+      You, J., Tulpan, D., Krziyzek, C., &amp; Ellis, J. L. (2026).
+      <em>
+       Journal of Animal Science, skag079
+      </em>
+     </div>
+     <div class="publication-methods">
+      研究方法：机器学习 · 回归分析 · 特征工程 · SHAP · Python
+     </div>
+     <a href="https://doi.org/10.1093/jas/skag079" rel="noopener noreferrer" target="_blank">
+      → 查看论文
+     </a>
+    </article>
+    <article class="publication">
+     <div class="publication-title">
+      3. Evaluating Variables Affecting Pellet Durability Index (PDI) in Pelleted Corn-Soy-Based Feeds for Swine and Poultry: A Meta-Analysis
+     </div>
+     <div class="publication-meta">
+      You, J., Hall, K., Civiero, J., Malpass, M. C., Tulpan, D., &amp; Ellis, J. L. (2025).
+      <em>
+       Animal Feed Science and Technology, 116566
+      </em>
+     </div>
+     <div class="publication-methods">
+      研究方法：荟萃分析 · 自动化模型筛选 · 混合效应模型 · SAS (PROC MIXED)
+     </div>
+     <a href="https://doi.org/10.1016/j.anifeedsci.2025.116566" rel="noopener noreferrer" target="_blank">
+      → 查看论文
+     </a>
+    </article>
+    <article class="publication">
+     <div class="publication-title">
+      4. Prediction of Pellet Durability Index (PDI) in a Commercial Feed Mill Using Multiple Linear Regression with Variable Selection and Dimensionality Reduction
+     </div>
+     <div class="publication-meta">
+      You, J., Tulpan, D., Krziyzek, C., &amp; Ellis, J. L. (2025).
+      <em>
+       Journal of Animal Science, skaf021
+      </em>
+     </div>
+     <div class="publication-methods">
+      研究方法：多元线性回归 · 变量选择 · 主成分分析（PCA） · 偏最小二乘回归（PLSR） · SAS
+     </div>
+     <a href="https://doi.org/10.1093/jas/skaf021" rel="noopener noreferrer" target="_blank">
+      → 查看论文
+     </a>
+    </article>
+    <article class="publication">
+     <div class="publication-title">
+      5. Review: Recent Advances and Future Technologies in Poultry Feed Manufacturing
+     </div>
+     <div class="publication-meta">
+      You, J., Ellis, J. L., Tulpan, D., &amp; Malpass, M. C. (2024).
+      <em>
+       World's Poultry Science Journal, 1–13
+      </em>
+     </div>
+     <div class="publication-methods">
+      研究方法：文献综述
+     </div>
+     <a href="https://doi.org/10.1080/00439339.2024.2323536" rel="noopener noreferrer" target="_blank">
+      → 查看论文
+     </a>
+    </article>
+    <article class="publication">
+     <div class="publication-title">
+      6. Comparison of Imputation Methods for Missing Production Data of Dairy Cattle
+     </div>
+     <div class="publication-meta">
+      You, J., Ellis, J. L., Adams, S., Sahar, M., Jacobs, M., &amp; Tulpan, D. (2023).
+      <em>
+       Animal, 17, 100921
+      </em>
+     </div>
+     <div class="publication-methods">
+      研究方法：缺失数据插补 · 机器学习 · missForest · Python
+     </div>
+     <a href="https://doi.org/10.1016/j.animal.2023.100921" rel="noopener noreferrer" target="_blank">
+      → 查看论文
+     </a>
+    </article>
+    <article class="publication">
+     <div class="publication-title">
+      7. Using Machine Learning Regression Models to Predict the Pellet Quality of Pelleted Feeds
+     </div>
+     <div class="publication-meta">
+      You, J., Tulpan, D., Malpass, M. C., &amp; Ellis, J. L. (2022).
+      <em>
+       Animal Feed Science and Technology, 293, 115443
+      </em>
+     </div>
+     <div class="publication-methods">
+      研究方法：机器学习 · 回归分析 · 特征重要性 · 支持向量回归（SVR） · Python
+     </div>
+     <a href="https://doi.org/10.1016/j.anifeedsci.2022.115443" rel="noopener noreferrer" target="_blank">
+      → 查看论文
+     </a>
+    </article>
+    <article class="publication">
+     <div class="publication-title">
+      8. Using an Artificial Neural Network to Predict the Probability of Oviposition Events of Precision-Fed Broiler Breeder Hens
+     </div>
+     <div class="publication-meta">
+      You, J., Lou, E., Afrouziyeh, M., Zukiwsky, N. M., &amp; Zuidhof, M. J. (2021).
+      <em>
+       Poultry Science, 100(8), 101187
+      </em>
+     </div>
+     <div class="publication-methods">
+      研究方法：人工神经网络 · 二分类 · 概率预测 · Keras (TensorFlow) · Python
+     </div>
+     <a href="https://doi.org/10.1016/j.psj.2021.101187" rel="noopener noreferrer" target="_blank">
+      → 查看论文
+     </a>
+    </article>
+    <article class="publication">
+     <div class="publication-title">
+      9. A Supervised Machine Learning Method to Detect Anomalous Real-Time Broiler Breeder Body Weight Data Recorded by a Precision Feeding System
+     </div>
+     <div class="publication-meta">
+      You, J., Lou, E., Afrouziyeh, M., Zukiwsky, N. M., &amp; Zuidhof, M. J. (2021).
+      <em>
+       Computers and Electronics in Agriculture, 185, 106171
+      </em>
+     </div>
+     <div class="publication-methods">
+      研究方法：异常值检测 · 监督学习 · Python
+     </div>
+     <a href="https://doi.org/10.1016/j.compag.2021.106171" rel="noopener noreferrer" target="_blank">
+      → 查看论文
+     </a>
+    </article>
+    <article class="publication">
+     <div class="publication-title">
+      10. Application of Random Forest Classification to Predict Daily Oviposition Events in Broiler Breeders Fed by Precision Feeding System
+     </div>
+     <div class="publication-meta">
+      You, J., van der Klein, S. A., Lou, E., &amp; Zuidhof, M. J. (2020).
+      <em>
+       Computers and Electronics in Agriculture, 175, 105526
+      </em>
+     </div>
+     <div class="publication-methods">
+      研究方法：随机森林 · 二分类 · Python
+     </div>
+     <a href="https://doi.org/10.1016/j.compag.2020.105526" rel="noopener noreferrer" target="_blank">
+      → 查看论文
+     </a>
+    </article>
+   </section>
+   <section id="tools">
+    <h2 class="section-title">
+     科研软件与工具
+    </h2>
+    <div class="tool-card">
+     <h3>
+      1. irapy
+     </h3>
+     <p>
+      基于 Python 开发的影响范围评估（Impact Range Assessment，IRA）软件库，支持单次及重复 IRA 分析，用于评估输入变量对回归模型预测结果的影响，提高模型的可解释性，并为敏感性分析提供工具支持。
+     </p>
+     <p>
+      <span class="tag">
+       可解释人工智能
+      </span>
+      <span class="tag">
+       机器学习
+      </span>
+      <span class="tag">
+       敏感性分析
+      </span>
+      <span class="tag">
+       模型可解释性
+      </span>
+      <span class="tag">
+       回归分析
+      </span>
+      <span class="tag">
+       Python
+      </span>
+     </p>
+     <p>
+      <a href="https://github.com/jyou2025/impact-range-assessment" rel="noopener noreferrer" target="_blank">
+       → 查看 GitHub 仓库
+      </a>
+     </p>
+    </div>
+    <div class="tool-card">
+     <h3>
+      2. PDI 在线预测工具
+     </h3>
+     <p>
+      基于机器学习和统计建模方法，开发并部署交互式网页应用，实现商业饲料厂颗粒饲料耐久性指数（PDI）的在线预测，为饲料质量评估和生产工艺优化提供辅助决策支持。
+     </p>
+     <p>
+      <span class="tag">
+       模型部署
+      </span>
+      <span class="tag">
+       饲料加工
+      </span>
+      <span class="tag">
+       颗粒饲料质量
+      </span>
+      <span class="tag">
+       网页应用
+      </span>
+      <span class="tag">
+       Python
+      </span>
+     </p>
+     <p>
+      <a href="http://137.184.153.27:1000/" rel="noopener noreferrer" target="_blank">
+       → 打开工具
+      </a>
+     </p>
+    </div>
+    <div class="tool-card">
+     <h3>
+      3. PDI Agent
+     </h3>
+     <p>
+      本项目旨在开发基于大语言模型（LLM）的饲料厂预测模型自动化管理框架，将规则驱动的工作流程与智能体技术相结合，探索预测模型的自动化监测、性能评估与更新方法，为预测模型的长期运行和维护提供技术支持。
+     </p>
+     <p>
+      <span class="tag">
+       大语言模型（LLM）
+      </span>
+      <span class="tag">
+       智能体应用
+      </span>
+      <span class="tag">
+       模型更新
+      </span>
+      <span class="tag">
+       模型部署
+      </span>
+      <span class="tag">
+       饲料加工
+      </span>
+      <span class="tag">
+       颗粒饲料质量
+      </span>
+      <span class="tag">
+       Python
+      </span>
+     </p>
+    </div>
+   </section>
+   <section id="contact">
+    <h2 class="section-title">
+     联系方式
+    </h2>
+    <p>
+     🏫 大学个人主页：
+     <a href="https://animalbiosciences.uoguelph.ca/abscpeople/jyou03" rel="noopener noreferrer" target="_blank">
+      University of Guelph — Department of Animal Biosciences — Jihao You
+     </a>
+    </p>
+    <p>
+     🔗 LinkedIn：
+     <a href="https://www.linkedin.com/in/jihao-y-1128b7193/" rel="noopener noreferrer" target="_blank">
+      linkedin.com/in/jihao-y-1128b7193
+     </a>
+    </p>
+    <p>
+     📧 电子邮箱：
+     <a href="mailto:jyou03@uoguelph.ca">
+      jyou03@uoguelph.ca
+     </a>
+    </p>
+   </section>
+  </main>
+  <footer>
+   © 2026 游济豪（Jihao You）  ·  圭尔夫大学动物生物科学系  ·
+   <a href="https://github.com/jyou2025" rel="noopener noreferrer" target="_blank">
+    GitHub
+   </a>
+  </footer>
+ </body>
+</html>
 
